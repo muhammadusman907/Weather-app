@@ -1,0 +1,145 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+  background-image: linear-gradient(90deg , #faf2d6,#FFAA51);
+}
+
+.main-parent {
+    width: 100%;
+    height: 550px;
+    /* border: solid; */
+    display: flex;
+    justify-content: center;
+}
+
+.main-parent-child1 {
+    background-color:transparent;
+    /* border: solid; */
+    width: 28%;
+    height: 95vh;
+    margin-top: 5px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 2px #fff;
+}
+.main-parent-child1:hover{
+    
+    box-shadow: 1px 1px 3px 5px #fff;
+}
+.input-button-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    /* border: solid; */
+    width: 90%;
+    height: 40px;
+    margin: 0px auto;
+    border-radius: 30px;
+    background-color: #fff;
+}
+.input-button-parent:hover{
+    box-shadow: 1px 1px 2px 3px #fff;
+}
+.input-button-parent input {
+    background-color: transparent;
+    height: 30px;
+    width: 50%;
+    margin-right: 10px;
+    border: none;
+    font-size: 14px;
+    /* border-bottom: solid 1px 0; */
+    outline: none;
+    padding-left: 3%;
+
+}
+
+.input-button-parent span {
+    margin-top: 6px;
+    width: 7%;
+    height: 20px;
+    cursor: pointer;
+}
+
+.input-button-parent div {
+
+    width: 15%;
+    height: 20px;
+    cursor: pointer;
+}
+
+.weather-image {
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.city-name{
+    margin-top: 20px;
+    margin-left: 3%;
+    /* border: solid; */
+    width: 70%;
+}
+.weather-tempreature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border:solid ; */
+   height: auto;
+   width: 40%
+}
+.weather-tempreature div{
+    font-size: 70px;
+}
+.weather-detail{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: solid; */
+    height:200px;
+    width: 100%;
+}
+.weather-detail-box{
+    /* background-image: url(); */
+    /* background-repeat:no-repeat ; */
+    /* background-size: ; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    /* border: solid; */
+    height: 70px;
+    width: 80%;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.weather-detail-box:hover{
+    box-shadow: 1px 1px 1px 2px #fff;
+}
+.weather-detail-box img{
+      height: 30px;
+}
+
+@media only screen and (max-width:1000px) {
+    .main-parent-child1{
+        width: 390px;
+        height: 550px;
+    }
+    .input-button-parent{
+        height: 50px;
+    }
+    .input-button-parent input{
+         font-size: 15px;
+    }
+    .city-name{
+        font-size: 18px;
+    }
+    .weather-tempreature div{
+        font-size: 50px;
+    }
+    
+}
